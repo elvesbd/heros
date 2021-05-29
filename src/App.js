@@ -1,11 +1,13 @@
 import { CharactersProvider } from "./Contexts/CharactersContext";
 
-import {Characters} from './components/Characters';
+import {Routes} from './Routes';
+
+import './styles/global.module.scss';
 
 function App() {
   return (
     <CharactersProvider>
-      <Characters />
+      <Routes />
     </CharactersProvider>
   );
 }
