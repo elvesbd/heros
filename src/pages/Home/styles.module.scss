@@ -1,0 +1,52 @@
+.homeContainer {
+  height: calc(100vh - 5rem);
+  background-size: cover;
+  background-position: left;
+  background-image: url(../../images/banner8.jpg);
+
+  .homeContainerVertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+
+    .homeContainerHorizontal {
+      width: inherit;
+      height: inherit;
+      background: linear-gradient(to right, #111, transparent);
+
+      .contentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+
+        max-width: 600px;
+        margin: 0 5rem;
+        padding: 0 2rem;
+        height: calc(100vh - 5rem);
+
+        > span {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+
+        h1 {
+          font-size: 4rem;
+          line-height: 4rem;
+          font-weight: 900;
+          margin-top: 2rem;
+
+          span {
+            color: var(--cyan-500);
+          }
+        }
+
+        p {
+          font-size: 1.5rem;
+          line-height: 2.25rem;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+}
