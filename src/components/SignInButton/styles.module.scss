@@ -1,0 +1,32 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 3rem;
+  color: var(--white);
+  font-weight: 800;
+  border-radius: 0.5rem;
+  background: var(--gray-850);
+  border: 0;
+  padding: 0 1.5rem;
+
+  svg {
+    width: 1.250rem;
+    height: 1.250rem;
+  }
+
+  svg.closeIcon {
+    margin-left: 1rem;
+  }
+
+  svg:first-child {
+    margin-right: 1rem;
+  }
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
