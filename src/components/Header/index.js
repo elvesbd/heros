@@ -1,9 +1,17 @@
 //import { SignInButton } from '../SignInButton';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import { SocialNetworks } from '../SocialNetworks';
+
 import styles from './styles.module.scss';
 
-
 export function Header() {
+const [active, setActive] = useState(true);
+
+function handleClick() {
+  setActive(false);
+}
 
   return (
     <header className={styles.headerContainer}>
@@ -12,18 +20,22 @@ export function Header() {
 
         <nav>
           <Link 
-            to="/" 
-            className={styles.active}
+            to="/"
+            onClick={handleClick}
+            className={active === true ? styles.active : ''}
           >
             Home
           </Link>
           <Link 
             to="/characters" 
-            className={styles.active}
+            onClick={handleClick}
+            className={active === false ? styles.active : ''}
           >
             Characters
           </Link>
-        </nav>        
+        </nav>
+
+        <SocialNetworks />
       </div>
   </header>
   );

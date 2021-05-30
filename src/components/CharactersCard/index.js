@@ -1,14 +1,12 @@
 import { useContext } from "react";
 import { CharactersContext } from "../../Contexts/CharactersContext";
 
-
 import styles from './styles.module.scss';
 
 
 export function CharactersCard() {
   const characters = useContext(CharactersContext);
-  console.log(characters)
-
+  
   return (
     <div className={styles.charactersCardList}>
       {characters.map(character => (
