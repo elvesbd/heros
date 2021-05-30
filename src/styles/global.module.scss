@@ -11,12 +11,14 @@
   --gray-300: #a8a8b3;
   --gray-800: #29292e;
   --gray-700: #323238;
+  --gray-750:#2e303c;
+  --gray-800:#1f222980;
   --gray-850: #1f2729;
   --gray-900: #121214;
 
   --red-500: #e84f27;
   --cyan-500: #61dafb;
-  --yellow-500: #eba417;
+  --yellow-500: #FAE800;
 }
 
 @media (max-width: 720px) {
@@ -32,7 +34,7 @@
 }
 
 body {
-  background: var(--gray-900);
+  background: var(--gray-750);
   color: var(--white);
 }
 
@@ -46,4 +48,8 @@ button, a {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
