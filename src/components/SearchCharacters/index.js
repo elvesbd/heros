@@ -1,9 +1,14 @@
-import styles from './styles.module.scss';
+import { useContext } from 'react';
+import CharactersContext from '../../Contexts/CharactersContext';
 
 
-export function CharacterCard({ }) {
- 
+
+export function SearchCharacters() {
+  const characters = useContext(CharactersContext);
+
   return (
-    <h1>Card</h1>
+    <div>
+     
+    </div>
   );
 };
