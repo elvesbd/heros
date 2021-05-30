@@ -1,16 +1,12 @@
 import { CharactersCard } from '../CharactersCard';
-
-import styles from './styles.module.scss';
+import { SearchCharacters } from '../SearchCharacters';
 
 
 export function CharacterList() {
   
   return (
     <>
-      <div className={styles.searchCharacter}>
-        <input type="search" />
-      </div>
-      
+      <SearchCharacters />
       <CharactersCard />
     </>
   );
