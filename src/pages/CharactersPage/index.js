@@ -1,8 +1,12 @@
-import {Characters} from '../../components/Characters';
+import {CharacterCard} from '../../components/CharacterCard';
+import { Header } from '../../components/Header';
 
 
 export default function CharactersPage() {
   return (
-    <Characters />
+   <>
+     <Header />
+     <CharacterCard />
+   </>
   );
 };
