@@ -1,5 +1,5 @@
 .homeContainer {
-  height: calc(100vh - 5rem);
+  height: 100vh;
   background-size: cover;
   background-position: left;
   background-image: url(../../images/banner8.jpg);
@@ -21,9 +21,9 @@
   
 
         max-width: 600px;
-        margin: 0 5rem;
+        margin: 2rem 5rem;
         padding: 0 2rem;
-        height: calc(100vh - 5rem);
+        height: 100vh;
 
         > span {
           font-size: 1.5rem;
@@ -49,4 +49,66 @@
       }
     }
   }
+}
+
+@media (max-width: 1024px) {
+  .homeContainer {
+   .homeContainerVertical {
+     .homeContainerHorizontal {
+      .contentContainer {
+        margin: 5rem 0;
+      }
+     }
+   }
+  }
+}
+
+@media (max-width: 320px) {
+  .homeContainer {
+    .homeContainerVertical {
+      .homeContainerHorizontal {
+       .contentContainer {
+          h1 {
+            font-size: 3rem;
+            margin-top: 0.5rem;
+            > span {
+              margin-top: 1rem;
+              font-size: 1rem;
+            }
+          }
+
+          p {
+            line-height: 1.5rem;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+   }
+}
+
+@media (max-width: 425px) and (min-width:325px) {
+  .homeContainer {
+    .homeContainerVertical {
+      .homeContainerHorizontal {
+       .contentContainer {
+          h1 {
+            font-size: 3rem;
+            margin-top: 0.5rem;
+            > span {
+              margin-top: 0.25rem;
+              font-size: 1rem;
+            }
+          }
+
+          p {
+            line-height: 1.5rem;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+   }
 }
