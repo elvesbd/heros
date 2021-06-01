@@ -1,17 +1,11 @@
-//import { SignInButton } from '../SignInButton';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { SocialNetworks } from '../SocialNetworks';
 
 import styles from './styles.module.scss';
 
 export function Header() {
-const [active, setActive] = useState(true);
-
-function handleClick() {
-  setActive(false);
-}
+  const { pathname } = useLocation()
 
   return (
     <header className={styles.headerContainer}>
@@ -21,15 +15,13 @@ function handleClick() {
         <nav>
           <Link 
             to="/"
-            onClick={handleClick}
-            className={active === true ? styles.active : ''}
+            className={pathname === '/' ? styles.active : ''}
           >
             Home
           </Link>
           <Link 
             to="/characters" 
-            onClick={handleClick}
-            className={active === false ? styles.active : ''}
+            className={pathname === '/characters' ? styles.active : ''}
           >
             Characters
           </Link>
